@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_green"
+    android:orientation="vertical"
+    tools:context=".RegisterMedicationActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Register your remedy"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/textBarcode"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Barcode: "
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textNameRemedy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBarcode"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Name Remedy: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNameRemedy"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Description: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textBuyDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Buy Date: 00/00/0000"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBuyDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Due Date: 00/00/0000"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnInsertData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDueDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/btnbgcolor"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnReadData"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDueDate"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="140dp"
+        android:layout_toEndOf="@+id/btnInsertData"
+        android:layout_toRightOf="@id/btnInsertData"
+        android:background="@drawable/btnbgcolor"
+        android:text="Show Register"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDueDate"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="140dp"
+        android:layout_toRightOf="@id/btnReadData"
+        android:background="@drawable/btnbgcolor"
+        android:text="Update Register"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/textDueDate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="140dp"
+        android:layout_toEndOf="@+id/btnUpdateData"
+        android:background="@drawable/btnbgcolor"
+        android:text="Delete Register"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btnImageBarcode"
+        android:layout_width="138dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="599dp"
+        android:background="@drawable/efectbutton"
+        app:srcCompat="@mipmap/barcode_icons_foreground" />
+</RelativeLayout>
